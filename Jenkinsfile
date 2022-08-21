@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent {
+                label 'LinuxAgent'
+        }
+        
     parameters {
         string(name: 'ENV', description: 'enter env value')
     }
